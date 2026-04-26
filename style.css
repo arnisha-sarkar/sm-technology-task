@@ -389,6 +389,61 @@ nav {
   line-height: 100%;
   padding: 20px 0 20px 0;
 }
+/* questions section */
+.faq-container {
+  padding: 150px 0 150px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+details {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+/* ক্লিকের আগের হেডলাইন স্টাইল */
+summary {
+  list-style: none; /* ডিফল্ট অ্যারো সরানোর জন্য */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  color: #101828;
+}
+
+/* প্লাস (+) আইকন তৈরি */
+summary .icon::before {
+  content: "+";
+  font-size: 24px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ওপেন হলে মাইনাস (-) আইকন হবে */
+details[open] summary .icon::before {
+  content: "−";
+}
+
+/* ভেতরের লেখার স্টাইল */
+.content {
+  padding-top: 10px;
+  color: #667085;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ডিফল্ট অ্যারো হাইড করা (Chrome/Safari এর জন্য) */
+summary::-webkit-details-marker {
+  display: none;
+}
 /* responsive style */
 /* --- Tablet and Mobile Responsive Styles (Below 1024px) --- */
 @media (max-width: 1024px) {
@@ -590,6 +645,20 @@ nav {
   .business-images img {
     width: 100%;
   }
+  /* popular section */
+  .popular-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .popular-text {
+    width: 100%;
+  }
+  .popular-image {
+    width: 100%;
+  }
+  .popular-image img {
+    width: 100%;
+  }
 }
 
 /* --- Extra Small Mobile Adjustments (Below 480px) --- */
@@ -661,6 +730,20 @@ nav {
     flex-direction: column;
   }
   .business-images img {
+    width: 100%;
+  }
+  /* popular section */
+  .popular-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .popular-text {
+    width: 100%;
+  }
+  .popular-image {
+    width: 100%;
+  }
+  .popular-image img {
     width: 100%;
   }
 }
