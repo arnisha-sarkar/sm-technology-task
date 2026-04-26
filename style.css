@@ -200,6 +200,127 @@ nav {
 .featured-box-three img {
   width: 130px;
 }
+/* services section */
+.services {
+  padding: 100px 0 100px 0;
+  background-color: #f5f5f5;
+}
+.services-parent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.services-parent h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 24%;
+}
+.services-parent > p {
+  width: 741px;
+  height: 52px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #344054;
+}
+.services-items {
+  background-color: #ffffff;
+  border: 1px solid #d0d5dd;
+  border-radius: 16px;
+  display: flex;
+  padding: 28px 24px 28px 24px;
+  gap: 30px;
+}
+.item-box-one {
+  width: 50%;
+}
+.item-box-one .sub-title {
+  display: flex;
+  gap: 20px;
+}
+.sub-title {
+}
+.sub-title img {
+  width: 48px;
+  height: 48px;
+}
+.sub-title h3 {
+  display: flex;
+  align-items: center;
+}
+.left-item {
+  margin-top: 20px;
+}
+.left-item-product {
+  display: flex;
+  gap: 12px;
+}
+.left-item-product img {
+  width: 18px;
+  height: 18px;
+}
+.left-item-product h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: #101828;
+  margin-bottom: 12px;
+}
+.left-item p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: justify;
+  width: 550px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+}
+.line-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-box-two {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.services-right {
+  border: 1px solid #d0d5dd;
+  width: 522px;
+  height: 130px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 24px;
+}
+
+.righ-item > h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 44px;
+}
+.righ-item p {
+  width: 380px;
+  color: #344054;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 164%;
+}
 /* responsive style */
 /* --- Tablet and Mobile Responsive Styles (Below 1024px) --- */
 @media (max-width: 1024px) {
@@ -341,6 +462,58 @@ nav {
   .featured-box-three img {
     width: 110px; /* ট্যাবলেটে লোগো কিছুটা ছোট করা হলো */
   }
+  /* services section */
+  .services {
+    padding: 60px 20px; /* প্যাডিং কিছুটা কমানো হলো */
+  }
+
+  /* মেইন ডেসক্রিপশন টেক্সট রিসেট */
+  .services-parent > p {
+    width: 100%; /* ফিক্সড উইডথ সরিয়ে দেওয়া হলো */
+    max-width: 600px; /* বড় স্ক্রিনে দেখতে সুন্দর লাগার জন্য */
+    height: auto; /* ফিক্সড হাইট সরানো হলো */
+    margin-bottom: 30px;
+  }
+
+  .services-parent h2 {
+    font-size: 36px;
+    line-height: 1.2; /* line-height: 24% সমস্যা করতে পারে, তাই ১.২ দেওয়া ভালো */
+  }
+
+  /* সার্ভিস আইটেমস ফ্লেক্স ডিরেকশন পরিবর্তন */
+  .services-items {
+    flex-direction: column;
+    gap: 40px;
+    padding: 24px;
+  }
+
+  .item-box-one,
+  .item-box-two {
+    width: 100%; /* ফুল উইডথ */
+  }
+
+  /* বাম পাশের প্যারাগ্রাফ রিসেট */
+  .left-item p {
+    width: 100%;
+    height: auto;
+    border: none; /* রেড বর্ডার সরিয়ে দিতে পারেন */
+  }
+
+  /* ডান পাশের কার্ডগুলো রিসেট */
+  .services-right {
+    width: 100%; /* ফিক্সড ৫২২ পিক্সেল সরানো হলো */
+    height: auto;
+    flex-direction: column; /* মোবাইলে আইকন উপরে লেখা নিচে */
+    text-align: center;
+    gap: 15px;
+  }
+
+  .righ-item p {
+    width: 100%; /* ফিক্সড ৩৮০ পিক্সেল সরানো হলো */
+  }
+  .line-two {
+    display: none;
+  }
 }
 
 /* --- Extra Small Mobile Adjustments (Below 480px) --- */
@@ -392,5 +565,18 @@ nav {
 
   .featured-box-three {
     gap: 20px;
+  }
+  /* services section */
+  .item-box-one {
+    width: 100%;
+  }
+  .item-box-two {
+    width: 100%;
+  }
+  .line-two {
+    display: none;
+  }
+  .left-item p {
+    padding-bottom: 15px;
   }
 }
