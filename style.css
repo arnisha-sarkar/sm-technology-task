@@ -157,6 +157,49 @@ nav {
   justify-content: space-between;
   gap: 32px;
 }
+
+/* featured section */
+.featured {
+  background-color: #ffffff;
+}
+.featured-parent {
+  display: flex;
+  align-items: center;
+  padding: 80px 0 80px 0;
+}
+.featured-box-one {
+  width: 25%;
+}
+.featured-box-one h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  font-style: bold;
+  color: #000000;
+  padding-bottom: 15px;
+}
+.featured-box-one p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  color: #1d2939;
+}
+.featured-box-two {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.featured-box-three {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.featured-box-three img {
+  width: 130px;
+}
 /* responsive style */
 /* --- Tablet and Mobile Responsive Styles (Below 1024px) --- */
 @media (max-width: 1024px) {
@@ -267,6 +310,37 @@ nav {
     gap: 15px;
     justify-content: center;
   }
+  /* featured section */
+  .featured-parent {
+    flex-direction: column; /* হেডলাইন উপরে এবং লোগো নিচে আসবে */
+    text-align: center;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .featured-box-one {
+    width: 100%; /* হেডলাইন বক্স পুরো জায়গা নেবে */
+  }
+
+  .featured-box-one h3 {
+    font-size: 28px;
+  }
+
+  /* মাঝখানের ৫% গ্যাপ বক্সটি মোবাইলে দরকার নেই */
+  .featured-box-two {
+    display: none;
+  }
+
+  .featured-box-three {
+    width: 100%;
+    flex-wrap: wrap; /* লোগোগুলো জায়গা না পেলে নিচে নেমে আসবে */
+    justify-content: center;
+    gap: 30px; /* লোগোগুলোর মাঝে গ্যাপ */
+  }
+
+  .featured-box-three img {
+    width: 110px; /* ট্যাবলেটে লোগো কিছুটা ছোট করা হলো */
+  }
 }
 
 /* --- Extra Small Mobile Adjustments (Below 480px) --- */
@@ -302,5 +376,21 @@ nav {
   .social {
     flex-wrap: wrap; /* আইকন বেশি হলে নিচে নেমে আসবে */
     gap: 10px;
+  }
+  /* featured section er code */
+  .featured-box-one h3 {
+    font-size: 24px;
+  }
+
+  .featured-box-one p {
+    font-size: 16px;
+  }
+
+  .featured-box-three img {
+    width: 90px; /* ছোট মোবাইলে লোগো আরও ছোট করা হলো */
+  }
+
+  .featured-box-three {
+    gap: 20px;
   }
 }
