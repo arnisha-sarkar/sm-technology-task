@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/Logo.png">
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -13,24 +15,25 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body style="border: 2px solid red;">
-    <main>
-        <!-- nav bar -->
+<body>
+    <!-- header start -->
+    <header>
+        <!-- nav bar start -->
         <nav class="container">
             <figure>
                 <img src="./assets/images/Logo.png" alt="">
             </figure>
 
             <ul class="nav-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">White level</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#review">Reviews</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#video">White level</a></li>
             </ul>
             <div id="bar">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
             </div>
             <div class="nav-btn">
                 <div>
@@ -39,16 +42,24 @@
                 <button class="btn-two">Book a demo</button>
             </div>
         </nav>
-        <!-- banner -->
-        <section class="banner">
+        <!-- nav bar end -->
+
+    </header>
+    <!-- header end -->
+    <main>
+        <!-- banner section start -->
+        <section id="home" class="banner">
             <div class="banner-parent container">
                 <div class="box-one">
                     <div class="star">
                         <img src="./assets/images/ic_round-star.png" alt="">
                         <p>All talents across the world</p>
                     </div>
-                    <h1>Create Short-From <br> Video Content starting <br> at <sapn style="color: red;">$99</sapn>
-                        /month.</h1>
+                    <h1>
+                        Create <span class="highlight">Short-Form</span> <br>
+                        <span class="highlight">Video Content</span> starting <br>
+                        at <span class="price-tag">$99</span>/month.
+                    </h1>
                     <p>Tailored social media content of the highest quality, crafted for your business. Shared on your
                         channels only upon your approval.</p>
                     <div class="nav-button">
@@ -73,7 +84,9 @@
                 </div>
             </div>
         </section>
-        <!-- featured section -->
+        <!-- banner section end -->
+
+        <!-- featured section start -->
         <section class="featured">
             <div class="featured-parent container">
                 <div class="featured-box-one">
@@ -97,87 +110,109 @@
                 </div>
             </div>
         </section>
-        <!-- services section -->
-        <section class="services">
+        <!-- featured section end -->
+        <!-- services section start -->
+        <section id="services" class="services">
             <div class="services-parent container">
                 <h2>All-Inclusive Creative Services</h2>
                 <p>Our fixed monthly rate covers all your creative needs, with predictable pricing, no contracts, and
                     unlimited revisions. Explore our services to find the perfect solution for your brand’s growth!</p>
-                <div class="services-items">
-                    <div class="item-box-one">
-                        <div class="sub-title">
-                            <img src="./assets/images/Frame.png" alt="">
-                            <h3>What We provide ?</h3>
+                <div class="services-items-parent">
+                    <div class="services-items">
+                        <div class="item-box-one">
+                            <div class="sub-title">
+                                <img src="./assets/images/Frame.png" alt="">
+                                <h3>What We provide ?</h3>
+                            </div>
+
+                            <div>
+                                <div class="left-item">
+                                    <div class="left-item-product">
+                                        <img src="./assets/images/Group 1000006045.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Low-cost, high quality</h4>
+                                        <p>Most agencies charge way too much. We are a lean team with <br> streamlined
+                                            workflows and
+                                            a platform built from the ground up <br> that allows us to charge much less.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="left-item">
+                                    <div class="left-item-product">
+                                        <img src="./assets/images/Group 1000006045.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Low-cost, high quality</h4>
+                                        <p>Most agencies charge way too much. We are a lean team with <br> streamlined
+                                            workflows and
+                                            a platform built from the ground up <br> that allows us to charge much less.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="left-item">
+                                    <div class="left-item-product">
+                                        <img src="./assets/images/Group 1000006045.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Low-cost, high quality</h4>
+                                        <p>Most agencies charge way too much. We are a lean team with <br> streamlined
+                                            workflows and
+                                            a platform built from the ground up <br> that allows us to charge much less.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-
-                        <div class="left-item">
-                            <div class="left-item-product">
-                                <img src="./assets/images/Group 1000006045.png" alt="">
-                                <h4>Low-cost, high quality</h4>
-                            </div>
-
-                            <p>Most agencies charge way too much. We are a lean team with <br> streamlined
-                                workflows and
-                                a platform built from the ground up <br> that allows us to charge much less.</p>
-                            <div class="left-item-product">
-                                <img src="./assets/images/Group 1000006045.png" alt="">
-                                <h4>Low-cost, high quality</h4>
-                            </div>
-
-                            <p>Most agencies charge way too much. We are a lean team with <br> streamlined
-                                workflows and
-                                a platform built from the ground up <br> that allows us to charge much less.</p>
-                            <div class="left-item-product">
-                                <img src="./assets/images/Group 1000006045.png" alt="">
-                                <h4>Low-cost, high quality</h4>
-                            </div>
-
-                            <p>Most agencies charge way too much. We are a lean team with <br> streamlined
-                                workflows and
-                                a platform built from the ground up <br> that allows us to charge much less.</p>
+                        <div class="line-two">
+                            <img src="./assets/images/Line 2.png" alt="">
                         </div>
-
+                        <div class="item-box-two">
+                            <div class="services-right">
+                                <div class="righ-item">
+                                    <h4>5 Short form video - $99/ 1 week</h4>
+                                    <p>Tailored graphic and video content packages.</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/Ellipse 2635.png" alt="">
+                                </div>
+                            </div>
+                            <div class="services-right">
+                                <div class="righ-item">
+                                    <img src="./assets/images/Frame 2147224444.png" alt="">
+                                    <h4>10 Short form video - $99/ 1 week</h4>
+                                    <p>Tailored graphic and video content packages.</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/Group 1000006044.png" alt="">
+                                </div>
+                            </div>
+                            <div class="services-right">
+                                <div class="righ-item">
+                                    <h4>5 Short form video - $99/ 1 week</h4>
+                                    <p>Tailored graphic and video content packages.</p>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/Ellipse 2635.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="line-two">
-                        <img src="./assets/images/Line 2.png" alt="">
-                    </div>
-                    <div class="item-box-two">
-                        <div class="services-right">
-                            <div class="righ-item">
-                                <h4>5 Short form video - $99/ 1 week</h4>
-                                <p>Tailored graphic and video content packages.</p>
-                            </div>
-                            <div>
-                                <img src="./assets/images/Ellipse 2635.png" alt="">
-                            </div>
-                        </div>
-                        <div class="services-right">
-                            <div class="righ-item">
-                                <h4>5 Short form video - $99/ 1 week</h4>
-                                <p>Tailored graphic and video content packages.</p>
-                            </div>
-                            <div>
-                                <img src="./assets/images/Ellipse 2635.png" alt="">
-                            </div>
-                        </div>
-                        <div class="services-right">
-                            <div class="righ-item">
-                                <h4>5 Short form video - $99/ 1 week</h4>
-                                <p>Tailored graphic and video content packages.</p>
-                            </div>
-                            <div>
-                                <img src="./assets/images/Ellipse 2635.png" alt="">
-                            </div>
-                        </div>
+                    <div style="display: flex; justify-content: center; padding-top: 30px;">
+                        <button class="one">Get
+                            Started</a></button>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </section>
-        <!-- engaging clip section -->
+        <!-- services section end -->
+
+        <!-- engaging clip section start -->
         <section class="engaging">
             <div class="container engaging-content">
-                <h2>Turn your raw video into engaging clip</h2>
+                <h2>Turn your raw video into <span style="color: #A554E6;">engaging clip</span></h2>
                 <div>
                     <div class="engaging-box">
                         <div class="engaging-box-item">
@@ -266,11 +301,14 @@
                 </div>
             </div>
         </section>
-        <!-- videos business section -->
-        <section class="business">
+        <!-- engaging clip section end -->
+
+        <!-- videos business section start -->
+        <section id="portfolio" class="business">
             <div class="container">
                 <div class="business-title">
-                    <h2>Videos <img src="./assets/images/Rectangle 6500@2x.png" alt=""> For business</h2>
+                    <h2>Videos <img src="./assets/images/Rectangle 6500@2x.png" alt=""> For <span
+                            style="color: #A554E6;">business</span></h2>
                 </div>
                 <div class="business-images">
                     <div>
@@ -291,12 +329,40 @@
                     </div>
                 </div>
             </div>
+            <!-- videos business section end -->
+            <section style="padding-bottom: 50px;" id="portfolio" class="video-brand">
+                <div class="container">
+                    <div class="business-title">
+                        <h2>Videos <img src="./assets/images/Rectangle 6500@2x.png" alt=""> For <span
+                                style="color: #A554E6;">personal brands</span></h2>
+                    </div>
+                    <div class="business-images">
+                        <div>
+                            <img src="./assets/images/image.png" alt="">
+                            <p>Health & Wealth</p>
+                        </div>
+                        <div>
+                            <img src="./assets/images/image-6.png" alt="">
+                            <p>Financial services</p>
+                        </div>
+                        <div>
+                            <img src="./assets/images/group-5.png" alt="">
+                            <p>Real estate</p>
+                        </div>
+                        <div>
+                            <img src="./assets/images/image-7.png" alt="">
+                            <p>Home services</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- videos personal brand section start -->
         </section>
-        <!-- videos personal brand section -->
-        <section class="video-brand">
+        <!-- <section id="portfolio" class="video-brand">
             <div class="container">
                 <div class="business-title">
-                    <h2>Videos <img src="./assets/images/Rectangle 6500@2x.png" alt=""> For personal brands</h2>
+                    <h2>Videos <img src="./assets/images/Rectangle 6500@2x.png" alt=""> For <span
+                            style="color: #A554E6;">personal brands</span></h2>
                 </div>
                 <div class="business-images">
                     <div>
@@ -317,9 +383,11 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- popular section  -->
-        <section class="popular">
+        </section> -->
+        <!-- videos personal brand section end -->
+
+        <!-- popular section start  -->
+        <section id="video" class="popular">
             <div class="popular-content container">
                 <div class="popular-image">
                     <img src="./assets/images/Rectangle 10323.png" alt="">
@@ -341,22 +409,41 @@
                 </div>
             </div>
         </section>
-        <!-- engaging clip secton -->
-        <section class="engaging">
-            <div class="container"></div>
+        <!-- popular section end  -->
+
+        <!-- stories section start -->
+        <section id="review" class="stories">
+            <div class="container">
+                <div class="business-title stories-title">
+                    <h2>Client Stories See <img src="./assets/images/Rectangle 6500@2x.png" alt=""> What <br><span
+                            style="color: #A554E6;">Our Partners
+                            Say</span>
+                    </h2>
+                </div>
+                <div class="stories-images">
+                    <img src="./assets/images/Group 1321314427.png" alt="">
+                    <img src="./assets/images/Group 1321314431.png" alt="">
+                    <img src="./assets/images/Group 1321314432.png" alt="">
+                    <img src="./assets/images/Group 1321314433.png" alt="">
+                </div>
+
+            </div>
         </section>
-        <!-- questions section -->
+        <!-- stories section end -->
+
+        <!-- questions section start -->
         <section>
             <div class="faq-container container">
                 <div class="services-parent">
-                    <h2 style="padding-bottom: 15px;">Frequently asked questions</h2>
+                    <h2 style="padding-bottom: 15px;">Frequently asked <span style="color: #A554E6;">questions</span>
+                    </h2>
                     <p>If you have any questions that aren't listed below, feel free to
                         schedule a demo to speak with
                         someone from our team.
                     </p>
                 </div>
-                <details style="border: 1px solid red;">
-                    <summary>
+                <details>
+                    <summary class="summary">
                         What cars do you have in your inventory?
                         <span class="icon"></span>
                     </summary>
@@ -412,7 +499,68 @@
                 </details>
             </div>
         </section>
+        <!-- questions section end -->
     </main>
+    <!-- Footer section start -->
+    <footer class="footer">
+        <div class="container parent-container">
+            <div class="first">
+                <h2>Logo</h2>
+                <h3>About us</h3>
+                <p>Raaya Social takes care of your social media posts
+                    for a flat monthly price. Quality content, posted to
+                    all your social media channels.
+                    Take your socials to the next level:</p>
+                <div class="footer-btn">
+                    <button class="btn-one">Log in</button>
+                    <button class="one">Get
+                        Started</button>
+                </div>
+            </div>
+            <div class="second">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Review</a></li>
+                    <li><a href="">Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="three">
+                <h3>Services</h3>
+                <p>Social media management <br>
+                    Short - form video content <br>
+                    Email design <br>
+                    Blog post</p>
+            </div>
+            <div class="contact-form-container">
+                <h2>Contact us</h2>
+
+                <form action="#">
+                    <div class="input-group">
+                        <input type="email" placeholder="Email address" required>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="tel" placeholder="Phone number">
+                    </div>
+
+                    <div class="input-group">
+                        <textarea placeholder="Write Your say" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        Submit <span>&rarr;</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-last">
+            <p>&copy; 2024 TaxDax. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- js file -->
     <script src="./script.js"></script>
 </body>
 

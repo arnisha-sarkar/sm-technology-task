@@ -6,15 +6,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding-top: 20px;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
+/* shared style start */
+.one {
+  font-size: 24px;
+  padding: 8px 27px 8px 27px;
+  border-radius: 18px;
+  border: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background: linear-gradient(to bottom, #b564f7, #6a2f9b);
+}
+/* shared style end */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0 16px 0;
+  padding: 16px 15px 16px 15px;
 }
 .nav-items {
   display: flex;
@@ -24,8 +42,9 @@ nav {
 .nav-items li a {
   text-decoration: none;
   color: #344054;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .nav-btn {
   display: flex;
@@ -54,6 +73,12 @@ nav {
   border-radius: 24px;
   line-height: 160%;
 }
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  z-index: 1000;
+}
 
 /* banner */
 .banner {
@@ -68,12 +93,21 @@ nav {
   width: 50%;
 }
 .box-one h1 {
+  color: #1d2939;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 48px;
-  line-height: 65px;
-  letter-spacing: -2%;
+  font-size: 3rem; /* ৪৮ পিক্সেল */
+  line-height: 1.35;
 }
+
+.highlight {
+  color: #9855ff;
+}
+
+.price-tag {
+  color: #d92d20;
+}
+
 .box-one p {
   color: #344054;
   font-size: 18px;
@@ -86,16 +120,7 @@ nav {
   display: flex;
   gap: 28px;
 }
-.nav-button .one {
-  font-size: 24px;
-  padding: 8px 27px 8px 27px;
-  border-radius: 18px;
-  border: none;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  background: linear-gradient(to bottom, #b564f7, #6a2f9b);
-}
+
 .nav-button .two {
   font-size: 18px;
   padding: 8px 27px 8px 27px;
@@ -131,6 +156,38 @@ nav {
 }
 .social-channel {
   background-color: #ffffff;
+  padding: 20px 24px;
+  width: 100%;
+  max-width: 496px;
+  min-height: 130px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-top: 40px;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.social-channel h4 {
+  font-size: 1.25rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000000;
+  width: 100%;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-start;
+  gap: 32px;
+}
+/* .social-channel {
+  background-color: #ffffff;
   pad: 20px 24px 20px 24px;
   width: 496px;
   height: 130px;
@@ -156,7 +213,7 @@ nav {
   display: flex;
   justify-content: space-between;
   gap: 32px;
-}
+} */
 
 /* featured section */
 .featured {
@@ -165,7 +222,7 @@ nav {
 .featured-parent {
   display: flex;
   align-items: center;
-  padding: 80px 0 80px 0;
+  padding: 4.5rem 0 4.5rem 0;
 }
 .featured-box-one {
   width: 25%;
@@ -173,7 +230,7 @@ nav {
 .featured-box-one h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 100%;
   font-style: bold;
   color: #000000;
@@ -182,7 +239,7 @@ nav {
 .featured-box-one p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 100%;
   color: #1d2939;
 }
@@ -215,7 +272,7 @@ nav {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 48px;
-  line-height: 24%;
+  line-height: 0.24;
 }
 .services-parent > p {
   width: 741px;
@@ -228,12 +285,14 @@ nav {
   line-height: 160%;
   color: #344054;
 }
-.services-items {
+.services-items-parent {
   background-color: #ffffff;
   border: 1px solid #d0d5dd;
   border-radius: 16px;
-  display: flex;
   padding: 28px 24px 28px 24px;
+}
+.services-items {
+  display: flex;
   gap: 30px;
 }
 .item-box-one {
@@ -244,17 +303,38 @@ nav {
   gap: 20px;
 }
 .sub-title {
+  display: flex;
+  align-items: center;
 }
 .sub-title img {
   width: 48px;
   height: 48px;
 }
-.sub-title h3 {
-  display: flex;
-  align-items: center;
+.sub-title > h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 1.5rem;
+  line-height: 1.24;
 }
 .left-item {
-  margin-top: 20px;
+  margin-top: 30px;
+  display: flex;
+  gap: 12px;
+}
+.left-item h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #101828;
+  font-size: 1.125rem;
+}
+.left-item p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #344054;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  padding: 10px 0 10px 0;
 }
 .left-item-product {
   display: flex;
@@ -264,26 +344,7 @@ nav {
   width: 18px;
   height: 18px;
 }
-.left-item-product h4 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 100%;
-  color: #101828;
-  margin-bottom: 12px;
-}
-.left-item p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 100%;
-  text-align: justify;
-  width: 550px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  border: 1px solid red;
-}
+
 .line-two {
   display: flex;
   align-items: center;
@@ -328,25 +389,29 @@ nav {
 .engaging-content {
 }
 .engaging-content h2 {
-  font-size: 48px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
   line-height: 124%;
   text-align: center;
 }
 
 .engaging-box {
-  padding: 20px 24px 20px 24px;
-  border: 2px solid red;
+  padding: 30px 0px 30px 0px;
   display: flex;
   gap: 24px;
 }
 .engaging-box-item {
-  border: 3px solid red;
   background-color: #fff;
   padding: 20px 24px 20px 24px;
   border-radius: 12px;
 }
 .engaging-box-item p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   padding-bottom: 20px;
+  font-size: 1.25rem;
+  line-height: 1.64;
 }
 .engaging-box-title {
   display: flex;
@@ -374,9 +439,9 @@ nav {
   color: #344054;
   text-align: justify;
   padding-top: 20px;
+  line-height: 1.4;
 }
 .engaging-box-two {
-  border: 2px solid red;
   display: flex;
   gap: 24px;
   padding: 28px;
@@ -411,21 +476,19 @@ nav {
 .business,
 .video-brand {
   background-color: #f5f5f5;
+  padding: 100px 0 0px 0;
 }
 .business-title h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 48px;
   line-height: 100%;
-  border: 4px solid green;
 }
 .business-title img {
   width: 160px;
   height: 34px;
-  border: 1px solid red;
 }
 .business-images {
-  border: 2px solid red;
   display: flex;
   justify-content: space-between;
   margin: 40px 0 50px 0;
@@ -438,13 +501,11 @@ nav {
   line-height: 164%;
   padding-top: 15px;
 }
-.video-brand .brand-title {
-  border: 2px solid orange;
-  padding-top: 40px;
-}
+
 /* popular  section*/
 .popular {
   background-color: #ffffff;
+  padding: 60px 0 60px 0;
 }
 .popular-content {
   display: flex;
@@ -455,7 +516,6 @@ nav {
 }
 .popular-text {
   width: 60%;
-  border: 3px solid green;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -472,9 +532,30 @@ nav {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 100%;
+  line-height: 1.5;
   padding: 20px 0 20px 0;
 }
+/* stories section */
+.stories {
+  background-color: #f5f5f5;
+  padding: 80px 0 80px 0;
+}
+.stories-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.stories-title h2 {
+  line-height: 1.24;
+}
+.stories-images {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 45px 15px 45px 15px;
+}
+
 /* questions section */
 .faq-container {
   padding: 150px 0 150px 0;
@@ -488,9 +569,8 @@ details {
   margin-top: 30px;
 }
 
-/* ক্লিকের আগের হেডলাইন স্টাইল */
 summary {
-  list-style: none; /* ডিফল্ট অ্যারো সরানোর জন্য */
+  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -500,7 +580,6 @@ summary {
   color: #101828;
 }
 
-/* প্লাস (+) আইকন তৈরি */
 summary .icon::before {
   content: "+";
   font-size: 24px;
@@ -513,12 +592,10 @@ summary .icon::before {
   align-items: center;
 }
 
-/* ওপেন হলে মাইনাস (-) আইকন হবে */
 details[open] summary .icon::before {
   content: "−";
 }
 
-/* ভেতরের লেখার স্টাইল */
 .content {
   padding-top: 10px;
   color: #667085;
@@ -526,9 +603,175 @@ details[open] summary .icon::before {
   line-height: 1.6;
 }
 
-/* ডিফল্ট অ্যারো হাইড করা (Chrome/Safari এর জন্য) */
 summary::-webkit-details-marker {
   display: none;
+}
+/* footer section */
+.footer {
+  background-color: #fff;
+  padding: 45px 0 45px 0;
+}
+.parent-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.first {
+  width: 325px;
+}
+.first h2 {
+  font-size: 48px;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.first h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
+  padding-top: 16px;
+}
+.first p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #344054;
+  padding: 16px 0 16px 0;
+  line-height: 1.64;
+  text-align: justify;
+}
+.footer-btn {
+  display: flex;
+  gap: 24px;
+}
+.footer-last p {
+  text-align: center;
+  color: #000000;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding-top: 50px;
+}
+.second {
+  margin-bottom: 20px;
+}
+
+.second h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #101828;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.second ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.second ul li {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.second ul li a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #475467;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.second ul li a:hover {
+  color: #101828;
+  padding-left: 5px;
+}
+.three {
+  margin-bottom: 20px;
+}
+
+.three h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #101828;
+  margin-bottom: 20px;
+}
+
+.three p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #475467;
+}
+
+.three p br {
+  display: block;
+  content: "";
+  margin-top: 8px;
+}
+.contact-form-container {
+  max-width: 450px;
+  background: #ffffff;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-form-container h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #101828;
+  margin-bottom: 24px;
+}
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #667085;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #1d2939;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #1d2939; /* আপনার ইমেজের মতো ডার্ক কালার */
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 50px; /* একদম রাউন্ডেড শেপ */
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #000000;
+}
+
+.submit-btn span {
+  font-size: 20px;
 }
 /* responsive style */
 /* --- Tablet and Mobile Responsive Styles (Below 1024px) --- */
@@ -598,6 +841,7 @@ summary::-webkit-details-marker {
   .box-one,
   .box-two {
     width: 100%;
+    padding: 0px 15px 0 15px;
   }
 
   .star {
@@ -620,14 +864,13 @@ summary::-webkit-details-marker {
     align-items: center;
   }
 
-  /* সোশ্যাল চ্যানেল বক্স রিসেট */
   .social-channel {
-    width: 100%; /* মোবাইলে বক্সটি স্ক্রিনের সমান হবে */
-    max-width: 400px; /* কিন্তু ৪০০ পিক্সেলের বেশি বড় হবে না */
+    width: 100%;
+    max-width: 400px;
     height: auto;
     padding: 20px;
-    position: static; /* ডেস্কটপের পজিশন সরিয়ে দেওয়া হলো */
-    margin: 20px auto 0 auto; /* মাঝখানে পজিশন */
+    position: static;
+    margin: 20px auto 0 auto;
   }
 
   .social-channel h4 {
@@ -642,54 +885,51 @@ summary::-webkit-details-marker {
   }
   /* featured section */
   .featured-parent {
-    flex-direction: column; /* হেডলাইন উপরে এবং লোগো নিচে আসবে */
+    flex-direction: column;
     text-align: center;
     gap: 30px;
     padding: 40px 20px;
   }
 
   .featured-box-one {
-    width: 100%; /* হেডলাইন বক্স পুরো জায়গা নেবে */
+    width: 100%;
   }
 
   .featured-box-one h3 {
     font-size: 28px;
   }
 
-  /* মাঝখানের ৫% গ্যাপ বক্সটি মোবাইলে দরকার নেই */
   .featured-box-two {
     display: none;
   }
 
   .featured-box-three {
     width: 100%;
-    flex-wrap: wrap; /* লোগোগুলো জায়গা না পেলে নিচে নেমে আসবে */
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 30px; /* লোগোগুলোর মাঝে গ্যাপ */
+    gap: 30px;
   }
 
   .featured-box-three img {
-    width: 110px; /* ট্যাবলেটে লোগো কিছুটা ছোট করা হলো */
+    width: 110px;
   }
   /* services section */
   .services {
-    padding: 60px 20px; /* প্যাডিং কিছুটা কমানো হলো */
+    padding: 60px 20px;
   }
 
-  /* মেইন ডেসক্রিপশন টেক্সট রিসেট */
   .services-parent > p {
-    width: 100%; /* ফিক্সড উইডথ সরিয়ে দেওয়া হলো */
-    max-width: 600px; /* বড় স্ক্রিনে দেখতে সুন্দর লাগার জন্য */
-    height: auto; /* ফিক্সড হাইট সরানো হলো */
+    width: 100%;
+    max-width: 600px;
+    height: auto;
     margin-bottom: 30px;
   }
 
   .services-parent h2 {
     font-size: 36px;
-    line-height: 1.2; /* line-height: 24% সমস্যা করতে পারে, তাই ১.২ দেওয়া ভালো */
+    line-height: 1.2;
   }
 
-  /* সার্ভিস আইটেমস ফ্লেক্স ডিরেকশন পরিবর্তন */
   .services-items {
     flex-direction: column;
     gap: 40px;
@@ -698,27 +938,25 @@ summary::-webkit-details-marker {
 
   .item-box-one,
   .item-box-two {
-    width: 100%; /* ফুল উইডথ */
+    width: 100%;
   }
 
-  /* বাম পাশের প্যারাগ্রাফ রিসেট */
   .left-item p {
     width: 100%;
     height: auto;
-    border: none; /* রেড বর্ডার সরিয়ে দিতে পারেন */
+    border: none;
   }
 
-  /* ডান পাশের কার্ডগুলো রিসেট */
   .services-right {
-    width: 100%; /* ফিক্সড ৫২২ পিক্সেল সরানো হলো */
+    width: 100%;
     height: auto;
-    flex-direction: column; /* মোবাইলে আইকন উপরে লেখা নিচে */
+    flex-direction: column;
     text-align: center;
     gap: 15px;
   }
 
   .righ-item p {
-    width: 100%; /* ফিক্সড ৩৮০ পিক্সেল সরানো হলো */
+    width: 100%;
   }
   .line-two {
     display: none;
@@ -736,6 +974,16 @@ summary::-webkit-details-marker {
     display: flex;
     flex-direction: column;
   }
+  .engaging-box-image > p {
+    width: 100%;
+  }
+  .engaging-box-two {
+    display: flex;
+    flex-direction: column;
+  }
+  .engaging-second-box {
+    width: 100%;
+  }
   /* business video secton */
   .business-images {
     display: flex;
@@ -743,6 +991,7 @@ summary::-webkit-details-marker {
   }
   .business-images img {
     width: 100%;
+    padding: 0 15px 0 15px;
   }
   /* popular section */
   .popular-content {
@@ -758,13 +1007,50 @@ summary::-webkit-details-marker {
   .popular-image img {
     width: 100%;
   }
+  /* stories section */
+  .stories-images {
+    display: flex;
+    flex-direction: column;
+  }
+  /* footer section */
+  .parent-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .first {
+    width: 100%;
+    text-align: center;
+  }
+  .first p {
+    padding: 15px;
+  }
+  .footer-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .second {
+    text-align: center;
+    padding-top: 40px;
+  }
+  .three {
+    text-align: center;
+  }
+  .contact-form-container {
+    max-width: 100%;
+    padding: 0 15px 0 15px;
+  }
+
+  /* questions section */
+  .details {
+    border: 5px solid green;
+  }
 }
 
 /* --- Extra Small Mobile Adjustments (Below 480px) --- */
 @media (max-width: 480px) {
   /* nav bar */
   nav {
-    padding: 12px 0;
+    padding: 12px 15px;
   }
 
   .nav-btn {
@@ -780,6 +1066,9 @@ summary::-webkit-details-marker {
   .box-one h1 {
     font-size: 26px;
     line-height: 34px;
+  }
+  .box-two {
+    padding: 0px 15px 0 15px;
   }
   .nav-button {
     display: flex;
@@ -836,6 +1125,9 @@ summary::-webkit-details-marker {
     display: flex;
     flex-direction: column;
   }
+  .engaging-box-image > p {
+    width: 100%;
+  }
   /* business video secton */
   .business-images {
     display: flex;
@@ -843,6 +1135,7 @@ summary::-webkit-details-marker {
   }
   .business-images img {
     width: 100%;
+    padding: 0px 15px 0 15px;
   }
   /* popular section */
   .popular-content {
@@ -857,5 +1150,35 @@ summary::-webkit-details-marker {
   }
   .popular-image img {
     width: 100%;
+  }
+  /* stories section */
+  .stories-images {
+    display: flex;
+    flex-direction: column;
+  }
+  /* footer section */
+  .parent-container {
+    grid-template-columns: repeat(1, 1fr); /* ২ কলাম */
+  }
+  .first {
+    width: 100%;
+    text-align: center;
+  }
+  .first p {
+    padding: 15px;
+  }
+  .footer-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .second {
+    text-align: center;
+    padding-top: 40px;
+  }
+  .three {
+    text-align: center;
+  }
+  .contact-form-container {
+    padding: 0 15px 0 15px;
   }
 }
