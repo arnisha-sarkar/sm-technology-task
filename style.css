@@ -321,6 +321,92 @@ nav {
   font-size: 16px;
   line-height: 164%;
 }
+/* engaging clip section  */
+.engaging {
+  background-color: #f5f5f5;
+}
+.engaging-content {
+}
+.engaging-content h2 {
+  font-size: 48px;
+  line-height: 124%;
+  text-align: center;
+}
+
+.engaging-box {
+  padding: 20px 24px 20px 24px;
+  border: 2px solid red;
+  display: flex;
+  gap: 24px;
+}
+.engaging-box-item {
+  border: 3px solid red;
+  background-color: #fff;
+  padding: 20px 24px 20px 24px;
+  border-radius: 12px;
+}
+.engaging-box-item p {
+  padding-bottom: 20px;
+}
+.engaging-box-title {
+  display: flex;
+  gap: 24px;
+}
+.engaging-box-title h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 164%;
+  width: 292px;
+}
+.engaging-box-image img {
+  width: 334px;
+  height: 185px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.engaging-box-image > p {
+  width: 334px;
+  height: 120px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #344054;
+  text-align: justify;
+  padding-top: 20px;
+}
+.engaging-box-two {
+  border: 2px solid red;
+  display: flex;
+  gap: 24px;
+  padding: 28px;
+}
+.engaging-second-box {
+  background-color: #d0d5dd;
+  padding: 12px 24px 12px 24px;
+  width: 378px;
+  height: 153px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 16px;
+}
+.engaging-second-box h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 164%;
+}
+.engaging-second-box p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #344054;
+  text-align: justify;
+  box-sizing: border-box;
+  padding: 5px 0 0 0;
+}
 /* business video section */
 .business,
 .video-brand {
@@ -637,6 +723,19 @@ summary::-webkit-details-marker {
   .line-two {
     display: none;
   }
+  /* engaging clip */
+  .engaging-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .engaging-box-image img {
+    width: 100%;
+    height: 100%;
+  }
+  .engaging-second-box {
+    display: flex;
+    flex-direction: column;
+  }
   /* business video secton */
   .business-images {
     display: flex;
@@ -723,6 +822,19 @@ summary::-webkit-details-marker {
   }
   .left-item p {
     padding-bottom: 15px;
+  }
+  /* engaging clip */
+  .engaging-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .engaging-box-two {
+    display: flex;
+    flex-direction: column;
+  }
+  .engaging-second-box {
+    display: flex;
+    flex-direction: column;
   }
   /* business video secton */
   .business-images {
