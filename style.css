@@ -1,6 +1,6 @@
 /* google font */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-/* Resetting default browser styles to avoid layout issues */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +9,7 @@
 html {
   scroll-behavior: smooth;
 }
-body {
-  padding-top: 20px;
-}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -76,8 +74,9 @@ nav {
 header {
   position: -webkit-sticky;
   position: sticky;
-  top: 20px;
+  top: 0;
   z-index: 1000;
+  background-color: #fff;
 }
 
 /* banner */
@@ -92,16 +91,25 @@ header {
 .box-one {
   width: 50%;
 }
-.box-one h1 {
-  color: #1d2939;
+h1 {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 3rem; /* ৪৮ পিক্সেল */
-  line-height: 1.35;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #101828;
 }
 
 .highlight {
-  color: #9855ff;
+  background: linear-gradient(90deg, #2b034d 0%, #b564f7 50%, #ef90ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.price-tag {
+  color: #d92d20;
+  font-weight: 700;
 }
 
 .price-tag {
@@ -478,7 +486,7 @@ header {
   padding-top: 15px;
 }
 
-/* popular  section*/
+/* popular  section */
 .popular {
   background-color: #ffffff;
   padding: 60px 0 60px 0;
@@ -646,6 +654,12 @@ details[open] summary .icon::before {
 summary::-webkit-details-marker {
   display: none;
 }
+.question {
+  color: #212121;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
 /* footer section */
 .footer {
   background-color: #fff;
@@ -791,11 +805,11 @@ summary::-webkit-details-marker {
 
 .submit-btn {
   width: 100%;
-  background-color: #1d2939; /* আপনার ইমেজের মতো ডার্ক কালার */
+  background-color: #1d2939;
   color: white;
   padding: 14px;
   border: none;
-  border-radius: 50px; /* একদম রাউন্ডেড শেপ */
+  border-radius: 50px;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -813,8 +827,9 @@ summary::-webkit-details-marker {
 .submit-btn span {
   font-size: 20px;
 }
+
 /* responsive style */
-/* --- Tablet and Mobile Responsive Styles (Below 1024px) --- */
+/* Tablet and Mobile Responsive Styles */
 @media (max-width: 1024px) {
   /* nav bar */
   nav {
@@ -1106,7 +1121,7 @@ summary::-webkit-details-marker {
   }
 }
 
-/* --- Extra Small Mobile Adjustments (Below 480px) --- */
+/* Extra Small Mobile */
 @media (max-width: 480px) {
   /* nav bar */
   nav {
@@ -1220,6 +1235,13 @@ summary::-webkit-details-marker {
     width: 100%;
     padding: 0 15px 0 15px;
   }
+  .popular-text {
+    padding: 0 15px 0 15px;
+    text-align: center;
+  }
+  .popular-text h2 {
+    font-size: 30px;
+  }
   /* stories section */
   .stories-images {
     display: flex;
@@ -1236,10 +1258,12 @@ summary::-webkit-details-marker {
     display: flex;
     flex-direction: column;
   }
-
+  .faq-container {
+    padding: 0 20px 0 20px;
+  }
   /* footer section */
   .parent-container {
-    grid-template-columns: repeat(1, 1fr); /* ২ কলাম */
+    grid-template-columns: repeat(1, 1fr);
   }
   .first {
     width: 100%;
