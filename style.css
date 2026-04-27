@@ -186,36 +186,7 @@ header {
   justify-content: flex-start;
   gap: 32px;
 }
-/* .social-channel {
-  background-color: #ffffff;
-  pad: 20px 24px 20px 24px;
-  width: 496px;
-  height: 130px;
-  border-radius: 16px;
-  display: flex;
-  gap: 12px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 40px;
-  left: 690px;
-}
-.social-channel h4 {
-  font-size: 20px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  line-height: 100%;
-  width: 390px;
-  color: #000000;
-}
-.social {
-  display: flex;
-  justify-content: space-between;
-  gap: 32px;
-} */
 
-/* featured section */
 .featured {
   background-color: #ffffff;
 }
@@ -610,21 +581,17 @@ header {
   font-size: 16px;
   line-height: 1.6;
 }
-/* কমন আইকন স্টাইল */
 .quote-icon {
   position: absolute;
-  width: 24px; /* আপনার আইকনের সাইজ অনুযায়ী এডজাস্ট করুন */
+  width: 24px;
   opacity: 0.5;
-  /* হালকা দেখানোর জন্য */
 }
 
-/* প্রথম আইকন (ওপরে বামে) */
 .quote-icon.start {
   top: 0;
   left: 0;
 }
 
-/* দ্বিতীয় আইকন (নিচে ডানে) */
 .quote-icon.end {
   bottom: 0;
   right: 0;
@@ -1062,9 +1029,15 @@ summary::-webkit-details-marker {
     display: flex;
     flex-direction: column;
   }
+  .business-images p {
+    padding-bottom: 10px;
+  }
   .business-images img {
     width: 100%;
     padding: 0 15px 0 15px;
+  }
+  .business-title h2 {
+    text-align: center;
   }
   /* popular section */
   .popular-content {
@@ -1076,6 +1049,7 @@ summary::-webkit-details-marker {
   }
   .popular-image {
     width: 100%;
+    padding: 0 15px 0 15px;
   }
   .popular-image img {
     width: 100%;
@@ -1166,7 +1140,7 @@ summary::-webkit-details-marker {
   }
 
   .social {
-    flex-wrap: wrap; /* আইকন বেশি হলে নিচে নেমে আসবে */
+    flex-wrap: wrap;
     gap: 10px;
   }
   /* featured section er code */
@@ -1179,7 +1153,7 @@ summary::-webkit-details-marker {
   }
 
   .featured-box-three img {
-    width: 90px; /* ছোট মোবাইলে লোগো আরও ছোট করা হলো */
+    width: 90px;
   }
 
   .featured-box-three {
@@ -1220,9 +1194,16 @@ summary::-webkit-details-marker {
     display: flex;
     flex-direction: column;
   }
+  .business-images p {
+    padding-bottom: 10px;
+  }
   .business-images img {
     width: 100%;
     padding: 0px 15px 0 15px;
+  }
+  .business-title h2 {
+    font-size: 30px;
+    text-align: center;
   }
   /* popular section */
   .popular-content {
@@ -1237,6 +1218,7 @@ summary::-webkit-details-marker {
   }
   .popular-image img {
     width: 100%;
+    padding: 0 15px 0 15px;
   }
   /* stories section */
   .stories-images {
