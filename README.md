@@ -16,7 +16,7 @@ Figma Accuracy: Precision-styled layouts with custom CSS and rem units.
 
 Responsive Design: Fully optimized for all screens—from mobile to 1440px+ ultra-wide.
 
-Modern Aesthetics: Clean purple gradients and interactive elements using Framer Motion.
+Modern Aesthetics: Clean purple gradients and interactive elements.
 
 Best Practices: Built with semantic HTML, component-based architecture, and Conventional Commits.
 
